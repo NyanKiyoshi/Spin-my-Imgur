@@ -1,0 +1,34 @@
+{
+    "preferences": [
+        {
+            "title": "Enable",
+            "type": "bool",
+            "description": "Does the application must replace the loading gif of imgur or not?",
+            "value": true,
+            "name": "enabled"
+        },
+        {
+            "title": "A .gif replacement",
+            "type": "string",
+            "description": "Preferably something that spins.",
+            "value": "https://i.imgur.com/s0X8FKE.gif",
+            "name": "url"
+        },
+        {
+            "title": "Scale factor",
+            "type": "string",
+            "description": "The scale factor (double number, like 1.2 for example).",
+            "value": "1",
+            "name": "scale_factor"
+        }
+    ],
+    "name": "spin-my-imgur",
+    "title": "Spin my Imgur",
+    "id": "jid1-cSHRvPuAf2DsBg",
+    "description": "Tired of the imgur's loading gif? Now you can if you want change this one by the one you want!",
+    "icon": "./data/images/logo-64.png",
+    "author": "NyanKiyoshi",
+    "homepage": "https://github.com/NyanKiyoshi/Spin-my-Imgur/",
+    "license": "MPL 2.0",
+    "version": "0.1"
+}
