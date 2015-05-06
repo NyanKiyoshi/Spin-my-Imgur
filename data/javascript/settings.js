@@ -20,7 +20,7 @@ function send_new_settings() {
 function get_old_settings() {
     addon.port.emit("need_old_settings_data", null);
     addon.port.on("old_settings_data", function(data) {
-            var scale_factor = parseFloat(data['scale_factor']);
+            var scale_factor = data['scale_factor'];
             document.getElementById('enable').checked = data['enabled'];
             var factor = document.getElementById('scale-factor').value = scale_factor;
             var url = document.getElementById('gif-url').value = data['url'];
