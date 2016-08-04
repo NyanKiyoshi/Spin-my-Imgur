@@ -9,13 +9,20 @@ html {
 
 body {
     color: #DDDDD1;
-    padding: 15px;
+    padding: 15px 15px 50px;
+    font-family:Verdana,sans-serif;
+    font-size: inherit;
+    line-height:1.5;
 }
 .checkbox { margin: 0 auto; display: table }
 
 .submit > input {
     display: block;
     float: left;
+}
+
+label, img {
+    font-size: 10px;
 }
 
 label {
@@ -25,7 +32,7 @@ label {
     width: auto;
 }
 
-input[type=text], #submit, input[type=range], input[type=button] {
+input[type=text], .form-button {
     transition: all 0.25s ease-in-out;
     border-radius: 3px;
     outline: none;
@@ -35,13 +42,13 @@ input[type=text], #submit, input[type=range], input[type=button] {
     font-size: 1em;
 }
 
-input[type=text], input[type=range] {
+input[type=text] {
     border-style: solid;
     border-width: 2px;
     border-color: #3b3b3b;
     background-color: rgba(0, 0, 0, 0.11);
     width: 100%;
-    padding: 10px 1.5em;
+    padding: 10px .8em;
     margin: 0;
 }
 
@@ -53,11 +60,11 @@ input[type='text']:focus {
     border-color: #85BF25;
 }
 
-input[type=button]::-moz-focus-inner, #submit::-moz-focus-inner {
+.form-button::-moz-focus-inner, .form-button.submit::-moz-focus-inner {
     border: 0;
 }
 
-#submit, input[type=button] {
+.form-button.submit, .form-button {
     width: 50%;
     border: none;
     padding: 10px 0;
@@ -65,17 +72,17 @@ input[type=button]::-moz-focus-inner, #submit::-moz-focus-inner {
     box-shadow: 0 -0.3em 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-input[type=button]  { background: #EE4444 }
-input[type=button]:hover  { background: rgba(238, 68, 68, 0.72) }
-input[type=button]:focus {
+.form-button  { background: #EE4444 }
+.form-button:hover  { background: rgba(238, 68, 68, 0.72) }
+.form-button:focus {
     background: #802424;
     box-shadow: 0 -0.15em 0 rgba(0, 0, 0, 0.2) inset;
     outline: none;
 }
 
-#submit { background: #85BF25 }
-#submit:hover { background: rgba(133, 191, 37, 0.72) }
-#submit:focus {
+.form-button.submit { background: #85BF25 }
+.form-button.submit:hover { background: rgba(133, 191, 37, 0.72) }
+.form-button.submit:focus {
     background: #598019;
     box-shadow: 0 -0.15em 0 rgba(0, 0, 0, 0.2) inset;
     outline: none;
@@ -124,9 +131,10 @@ ul {
     cursor: none;
 }
 
-#result {
+form img {
     display: block;
-    margin: 0 auto;
+    margin: 15px 0;
+    width: 100%;
 }
 
 /* Thank to: http://www.sitepoint.com/css3-toggle-switch/  */

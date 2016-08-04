@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+
+  "name": "Spin my Imgur",
+  "version": "0.2.0",
+
+  "description": "Tired of the imgur's loading gif? Now you can if you want change this one by the one you want!",
+  "homepage_url": "https://github.com/NyanKiyoshi/Spin-my-Imgur",
+
+  "applications": {
+  "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "45.0",
+      "update_url": "https://example.com/updates.json"
+    }
+  },
+  
+  "icons": {
+    "16": "icons/logo-16.png",
+    "32": "icons/logo-32.png",
+    "64": "icons/logo-64.png"
+  },
+
+  "content_security_policy": "img-src 'self'",
+
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.imgur.com/*",
+    "tabs"
+  ],
+
+  "background": {
+    "scripts": ["javascript/background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/logo-64.png",
+    "default_title": "Spin my Imgur",
+    "default_popup": "templates/settings.html"
+  },
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg",
+    "beasts/turtle.jpg",
+    "beasts/snake.jpg"
+  ]
+}

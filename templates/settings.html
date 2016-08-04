@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="../stylesheets/settings.css"/>
+    </head>
+
+    <body>
+        <form>
+            <div class="checkbox">
+                <input type="checkbox" id="is_enabled" name="is_enabled" class="switch"/>
+                <label for="is_enabled">Enabled</label>
+            </div>
+
+            <div class="text-input">
+                <label for="gif_url">New loading .gif URL:</label>
+                <input type="text" id="gif_url" name="gif_url"/>
+            </div>
+
+            <img id="preview" alt="Image unavailable/ invalid or is still loading"/>
+
+            <div class="submit">
+                <input class="form-button reset"  value="Reset"  type="reset"/>
+                <input class="form-button submit" value="Submit" type="button" onclick="formManager.saveformManager()" id="submit"/>
+            </div>
+        </form>
+    </body>
+
+    <script src="../javascript/formManager.js" type="text/javascript"></script>
+</html>
